@@ -17,13 +17,6 @@ resource "aws_iam_role" "this" {
   })
 }
 
-
-resource "aws_iam_role_policy_attachment" "AWSRoleAttachment" {
-  count      = var.policy_arn != "" ? 1 : 0
-  role       = aws_iam_role.this.name
-  policy_arn = var.policy_arn
-}
-
 resource "aws_iam_role_policy_attachment" "AWSLambdaBasicExecutionRoles" {
   role       = aws_iam_role.this.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"

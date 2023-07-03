@@ -64,11 +64,6 @@ variable "logs_retention_days" {
   description = "Specifying number of days to preserve the logs"
 }
 
-variable "policy_arn" {
-  type        = string
-  description = "Attach policy to aws lambda exec role"
-  default     = ""
-}
 
 
 locals {
