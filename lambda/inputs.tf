@@ -67,7 +67,7 @@ variable "logs_retention_days" {
 variable "policy_arn" {
   type        = string
   description = "Attach policy to aws lambda exec role"
-  default     = null
+  default     = ""
 }
 
 

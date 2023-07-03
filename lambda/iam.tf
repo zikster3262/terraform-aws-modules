@@ -19,7 +19,7 @@ resource "aws_iam_role" "this" {
 
 
 resource "aws_iam_role_policy_attachment" "AWSRoleAttachment" {
-  count      = var.policy_arn != null ? 1 : 0
+  count      = var.policy_arn != "" ? 1 : 0
   role       = aws_iam_role.this.name
   policy_arn = var.policy_arn
 }
