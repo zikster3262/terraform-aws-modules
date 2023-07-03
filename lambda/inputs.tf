@@ -1,9 +1,3 @@
-# source_dir       = "${path.module}/lambda/putItem"
-# output_path      = "${path.module}/lambda/putItem/hw-${random_string.r.result}.zip"
-# excludes         = ["${path.module}/lambda/putItem/node_modules"]
-# output_file_mode = "0666"
-
-
 variable "lambda_inputs" {
   type = object({
     name    = string
