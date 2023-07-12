@@ -62,7 +62,7 @@ variable "logs_retention_days" {
 
 locals {
   lambda_inputs = merge(var.lambda_inputs, {
-    timeout = 3
+    timeout = 10
     runtime = "nodejs16.x"
   })
 }
