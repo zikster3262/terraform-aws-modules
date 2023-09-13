@@ -1,4 +1,4 @@
-output "function_name" {
+output "exec_role_name" {
   value = var.lambda_inputs.name
 }
 
