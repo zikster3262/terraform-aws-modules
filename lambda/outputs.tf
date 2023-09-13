@@ -2,11 +2,11 @@ output "function_name" {
   value = var.lambda_inputs.name
 }
 
-output "lambda_exec_role" {
+output "exec_role" {
   value = aws_iam_role.this.arn
 }
 
-output "lambda_exec_role_name" {
+output "exec_role_name" {
   value = aws_iam_role.this.name
 }
 
